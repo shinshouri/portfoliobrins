@@ -1,0 +1,113 @@
+//
+//  WebAddressConstant.swift
+//  Brins Mobile - Customer
+//
+//  Created by Ibrahim Aziz Tejokusumo on 13/04/18.
+//  Copyright © 2018 InfoConnect Sdn. Bhd. All rights reserved.
+//
+
+
+// MARK: IMPORT
+
+import Foundation
+
+
+// MARK: SERVER
+
+public let EXTFOLDERWORK: String = "BRINS"
+public let WEBADDRESS_SERVER_WEBSERVICE_PRODUCTION: String = "https://brinsmob.brins.co.id:443/"
+public let WEBADDRESS_SERVER_WEBSERVICE_DEVELOPMENT: String = "https://brinsmobdev.brins.co.id:443/"
+public let WEBADDRESS_SERVER_WEBSERVICE: String = WEBADDRESS_SERVER_WEBSERVICE_DEVELOPMENT
+
+
+// MARK: DISCOUNT
+
+public let WEBSERVICE_SERVER_DISCOUNT_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "PremiService/selectDiscount"
+
+
+// MARK: TABLE DATA
+
+public let WEBSERVICE_SERVER_POSTALCODE_SELECTPROVINCEANDCITYBYPOSTALCODE: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectProvinceAndCityByPostalCode"
+public let WEBSERVICE_SERVER_POSTALCODE_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectPostalCode"
+public let WEBSERVICE_SERVER_FLOODZONE_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectFloodZone"
+public let WEBSERVICE_SERVER_ZONECATEGORY_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectZoneCategory"
+public let WEBSERVICE_SERVER_RISKCATEGORY_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectRiskCategory"
+public let WEBSERVICE_SERVER_RISKOCCUPATION_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectRiskOccupation"
+public let WEBSERVICE_SERVER_COLOR_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectColor"
+public let WEBSERVICE_SERVER_VEHICLETYPE_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectVehicleType"
+public let WEBSERVICE_SERVER_VEHICLEMODEL_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectVehicleModel"
+public let WEBSERVICE_SERVER_VEHICLEBRAND_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectVehicleBrand"
+public let WEBSERVICE_SERVER_LICENSEPLATE_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectLicensePlate"
+public let WEBSERVICE_SERVER_BRANCH_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectBranch"
+public let WEBSERVICE_SERVER_OCCUPATION_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectOccupation"
+public let WEBSERVICE_SERVER_CITY_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectCity"
+public let WEBSERVICE_SERVER_PROVINCE_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectProvince"
+public let WEBSERVICE_SERVER_VEHICLESUBMODEL_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectVehicleSubModel"
+public let WEBSERVICE_SERVER_COVERAGE_SELECTPRODUCTANDCOVERAGEBYCOVERAGECODE: String = WEBADDRESS_SERVER_WEBSERVICE + "TableDataSelectService/selectProductAndCoverageByCoverageCode"
+
+
+// MARK: PRODUCT
+
+/* ASRI */
+
+public let WEBSERVICE_SERVER_ASRI_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductAsriService/selectProductAsri"
+public let WEBSERVICE_SERVER_ASRI_SELECTBYREFERENCENUMBERFORVIEW: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductAsriService/selectProductAsriByReferenceNumberForView"
+public let WEBSERVICE_SERVER_ASRI_CALCULATEPREMI: String = WEBADDRESS_SERVER_WEBSERVICE + "PremiService/calculateAsriPremi"
+public let WEBSERVICE_SERVER_ASRI_INSERT: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductAsriService/insertProductAsri"
+public let WEBSERVICE_SERVER_ASRI_UPLOADZIP: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductAsriService/uploadProductAsri"
+public let WEBSERVICE_SERVER_ASRI_CREATEINVOICE: String = WEBADDRESS_SERVER_WEBSERVICE + "PaymentService/createInvoiceForAsri"
+
+/* OTO */
+
+public let WEBSERVICE_SERVER_OTO_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductOtoService/selectProductOto"
+public let WEBSERVICE_SERVER_OTO_SELECTBYREFERENCENUMBERFORVIEW: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductOtoService/selectProductOtoByReferenceNumberForView"
+public let WEBSERVICE_SERVER_OTO_CALCULATEPREMI: String = WEBADDRESS_SERVER_WEBSERVICE + "PremiService/calculateOtoPremi"
+public let WEBSERVICE_SERVER_OTO_INSERT: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductOtoService/insertProductOto"
+public let WEBSERVICE_SERVER_OTO_UPLOADZIP: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductOtoService/uploadProductOto"
+public let WEBSERVICE_SERVER_OTO_CREATEINVOICE: String = WEBADDRESS_SERVER_WEBSERVICE + "PaymentService/createInvoiceForOto"
+
+/* PERSONAL ACCIDENT */
+
+public let WEBSERVICE_SERVER_PERSONALACCIDENT_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductPersonalAccidentService/selectPersonalAccident"
+public let WEBSERVICE_SERVER_PERSONALACCIDENT_SELECTBYREFERENCENUMBERFORVIEW: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductPersonalAccidentService/selectProductPersonalAccidentByReferenceNumberForView"
+public let WEBSERVICE_SERVER_PERSONALACCIDENT_CALCULATEPREMI: String = WEBADDRESS_SERVER_WEBSERVICE + "PremiService/calculatePersonalAccidentPremi"
+public let WEBSERVICE_SERVER_PERSONALACCIDENT_INSERT: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductPersonalAccidentService/insertPersonalAccident"
+public let WEBSERVICE_SERVER_PERSONALACCIDENT_UPLOADZIP: String = WEBADDRESS_SERVER_WEBSERVICE + "ProductPersonalAccidentService/uploadPersonalAccident"
+
+
+// MARK: CUSTOMER
+
+public let WEBSERVICE_SERVER_CUSTOMER_FORGOTPASSWORD: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/forgotPassword"
+public let WEBSERVICE_SERVER_CUSTOMER_CHANGEPASSWORD: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/changePassword"
+public let WEBSERVICE_SERVER_CUSTOMER_CHECKLOGIN: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/checkLogin"
+public let WEBSERVICE_SERVER_CUSTOMER_UPDATECUSTOMER: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/updateCustomer"
+public let WEBSERVICE_SERVER_CUSTOMER_REGISTERCUSTOMER: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/registerCustomer"
+public let WEBSERVICE_SERVER_CUSTOMER_CHECKEXISMIDDLEWARE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/checkExistInMiddleware"
+public let WEBSERVICE_SERVER_CUSTOMER_REGISTEREMAIL: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/registerEmail"
+public let WEBSERVICE_SERVER_CUSTOMER_VERIFYEMAIL: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/verifyEmail"
+public let WEBSERVICE_SERVER_CUSTOMER_REGISTERMOBILEPHONE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/registerMobilePhone"
+public let WEBSERVICE_SERVER_CUSTOMER_VERIFYMOBILEPHONE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/verifyMobilePhone"
+public let WEBSERVICE_SERVER_CUSTOMER_CHECKEXISTINSERVER: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/checkExistInServer"
+public let WEBSERVICE_SERVER_CUSTOMER_VERIFYEMAILFOREDITPROFILE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/verifyEmailForEditProfile"
+public let WEBSERVICE_SERVER_CUSTOMER_REGISTEREMAILFOREDITPROFILE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/registerEmailForEditProfile"
+public let WEBSERVICE_SERVER_CUSTOMER_VERIFYMOBILEPHONEFOREDITPROFILE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/verifyMobilePhoneForEditProfile"
+public let WEBSERVICE_SERVER_CUSTOMER_REGISTERMOBILEPHONEFOREDITPROFILE: String = WEBADDRESS_SERVER_WEBSERVICE + "CustomerService/registerMobilePhoneForEditProfile"
+
+
+// MARK: CLAIM
+
+public let WEBSERVICE_SERVER_CLAIM_SELECT: String = WEBADDRESS_SERVER_WEBSERVICE + "ClaimService/selectClaim"
+public let WEBSERVICE_SERVER_CLAIM_INSERT: String = WEBADDRESS_SERVER_WEBSERVICE + "ClaimService/insertClaim"
+public let WEBSERVICE_SERVER_CLAIM_SELECTBYCLAIMNUMBER: String = WEBADDRESS_SERVER_WEBSERVICE + "ClaimService/selectClaimByClaimNumber"
+
+
+// LAYOUT
+
+
+
+// FORM
+
+/* public let final int SUBMITTEDLIST_SECTION_TOTAL = 2;
+public let final int CHANGEMOBILEPHONE_SECTION_TOTAL = 2;
+public let final int CHANGEEMAIL_SECTION_TOTAL = 2;
+public let final int CLAIMAPPLY_SECTION_TOTAL = 2; */

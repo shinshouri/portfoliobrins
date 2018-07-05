@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  Brins Mobile - Customer
+
+<<<<<<< Updated upstream
+  Created by Ibrahim Aziz Tejokusumo on 09/05/18.
+  Copyright © 2018 InfoConnect Sdn. Bhd. All rights reserved.
+*/
+
+
+// MARK: PAGE
+
+PAGE_BUYPRODUCT = "Beli Produk";
+PAGE_PRODUCTASRI = "Brins Asri";
+PAGE_PRODUCTOTO = "Brins Oto";
+PAGE_PRODUCTPERSONALACCIDENT = "Asuransi Kecelakaan Diri";
+PAGE_PRODUCTSUBMITTEDLIST = "Daftar Transaksi";
+PAGE_CLAIMAPPLY = "Pengajuan Klaim";
+PAGE_CLAIMSUBMITTEDLIST = "Daftar Klaim";
+PAGE_CHANGEPASSWORD = "Ubah Password";
+PAGE_FAQ = "FAQ";
+PAGE_ABOUTUS = "About Us";
+PAGE_POLICYINFORMATION = "Informasi Polis";
+PAGE_PAYMENT = "Pembayaran";
+PAGE_LOGIN = "Login";
+PAGE_PROFILE = "Profil";
+PAGE_CHANGEEMAIL = "Ubah Email";
+PAGE_CHANGEMOBILEPHONE = "Ubah Nomor Telepon";
+PAGE_EMERGENCYCONTACT = "Kontak Darurat";
+PAGE_REGISTRATION = "Daftar";
+
+
+// MARK: HEADER SUB
+
+HEADER_CONTROL_FORM = "Form";
+HEADER_CONTROL_ILLUSTRATION = "Ilustrasi";
+HEADER_CONTROL_DOCUMENT = "Dokumen";
+HEADER_CONTROL_PACKAGE = "Paket";
+HEADER_CONTROL_PRODUCTINFORMATION = "Informasi Produk";
+HEADER_CONTROL_QUESTIONNAIRE = "Kuesioner";
+HEADER_CONTROL_LIST = "List";
+HEADER_CONTROL_DETAIL = "Detail";
+HEADER_CONTROL_PAYMENT = "Pembayaran";
+
+
+//MARK: HEADER FORM
+
+TITLE_ACTIVITY_REGISTRASI = "Registrasi";
+
+HEADER_FORM_OVERVIEW_PERSONAL_ACCIDENT = "Informasi Asuransi";
+HEADER_FORM_BENEFICIARIES = "Ahli Waris";
+
+HEADER_FORM_BUILDINGINFORMATION = "Informasi Bangunan";
+HEADER_FORM_VEHICLEINFORMATION = "Informasi Kendaraan";
+HEADER_FORM_ASSUREDINFORMATION = "Informasi Ahli Waris";
+HEADER_FORM_PREMIILLUSTRATION = "Ilustrasi Premi";
+HEADER_FORM_PREMI = "Premi";
+HEADER_FORM_BUILDINGDOCUMENT = "Foto Bangunan";
+HEADER_FORM_VEHICLEDOCUMENT = "Foto Kendaraan";
+HEADER_FORM_OTO_SURVEY = "Survey";
+HEADER_FORM_STATEMENT = "Pernyataan";
+HEADER_FORM_SPPA = "SPPA";
+HEADER_FORM_HEALTH = "Kecelakaan Diri";
+HEADER_FORM_TERMSANDCONDITIONS = "Terms and Conditions";
+HEADER_FORM_OVERVIEW = "Overview";
+HEADER_FORM_UPLOADPRODUCT = "Upload Produk";
+HEADER_FORM_CLAIM = "Klaim";
+HEADER_FORM_CLAIMresult = "Pengajuan Klaim";
+
+HEADER_FORM_REGISTRATION1 = "Tahap 1";
+HEADER_FORM_REGISTRATION2 = "Tahap 2";
+HEADER_FORM_REGISTRATION3 = "Tahap 3";
+HEADER_FORM_REGISTRATION4 = "Tahap 4";
+HEADER_FORM_REGISTRATION5 = "Pendaftaran Sukses";
+HEADER_FORM_PROMOTION = "Input Kode Promosi";
+
+HEADER_FORM_CHANGEPASSWORD = "Password baru";
+HEADER_FORM_CHANGEMOBILEPHONE = "Change Mobile Phone";
+HEADER_FORM_VERIFYMOBILEPHONE = "Verify Mobile Phone";
+HEADER_FORM_CHANGEEMAIL = "Change Email";
+HEADER_FORM_VERIFYEMAIL = "Verify Email";
+HEADER_FORM_RESULT = "Result";
+HEADER_FORM_PERSONALINFORMATION = "Informasi Profil";
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderMainController" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonNavigation" destination="ESp-wM-3QL" id="le4-6K-yUx"/>
+                <outlet property="imageViewLogo" destination="SJ2-il-Yte" id="Lcb-3f-aTu"/>
+                <outlet property="labelTitle" destination="Del-v0-Aos" id="hyf-d7-kAR"/>
+                <outlet property="viewHeaderMain" destination="iN0-l3-epB" id="M7d-4q-Ocl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewHeaderMain" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SJ2-il-Yte" customClass="ImageViewHeaderMainLogo" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="290" y="325" width="75" height="37.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="3pu-p3-M4N"/>
+                        <constraint firstAttribute="width" constant="75" id="9e0-UR-g7i"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Del-v0-Aos" customClass="LabelHeaderMainTitle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="166" y="333" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESp-wM-3QL" customClass="ButtonNavigationOpen" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="10" y="328" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ESp-wM-3QL" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="2Eo-c4-7vS"/>
+                <constraint firstItem="ESp-wM-3QL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="V6r-LF-Y0J"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SJ2-il-Yte" secondAttribute="trailing" constant="10" id="VyH-aS-emB"/>
+                <constraint firstItem="SJ2-il-Yte" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dXq-l2-tzS"/>
+                <constraint firstItem="Del-v0-Aos" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="iNL-kE-oXD"/>
+                <constraint firstItem="Del-v0-Aos" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="uxX-Rp-9Zn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

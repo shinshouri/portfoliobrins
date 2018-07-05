@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderControlController" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonNext" destination="J13-of-4Ge" id="grG-8h-Cq9"/>
+                <outlet property="buttonPrevious" destination="Hny-TB-aQf" id="Q1a-IV-zK8"/>
+                <outlet property="labelTitle" destination="SkZ-dV-hSG" id="LLc-iL-Jm1"/>
+                <outlet property="stackViewProgressBarSection" destination="agB-RJ-78Z" id="O4h-SX-U1J"/>
+                <outlet property="viewHeaderControl" destination="iN0-l3-epB" id="d8l-OV-u0j"/>
+                <outlet property="viewProgressBarSectionComplete" destination="mT1-yM-iOv" id="lCt-Jb-Rh8"/>
+                <outlet property="viewProgressBarSectionNotComplete" destination="fAk-o0-I6t" id="eAx-Ur-KHR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewHeaderControl" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hny-TB-aQf" customClass="ButtonControlPrevious" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="30" y="328.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="goToPreviousWithSender:" destination="-1" eventType="touchUpInside" id="5iB-4G-ajP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J13-of-4Ge" customClass="ButtonControlNext" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="299" y="328.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="goToNextWithSender:" destination="-1" eventType="touchUpInside" id="iML-OL-hjO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkZ-dV-hSG" customClass="LabelHeaderControlTitle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="166" y="333.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="agB-RJ-78Z" customClass="StackViewProgressBarSection" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="664" width="375" height="3"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-yM-iOv" customClass="ViewProgressBarSection" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="3"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="w9z-To-oWj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAk-o0-I6t" customClass="ViewProgressBarSection" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="3"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="3Zh-gM-xcx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J13-of-4Ge" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="GMr-yg-AEr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="J13-of-4Ge" secondAttribute="trailing" constant="30" id="JP9-oQ-PPC"/>
+                <constraint firstItem="Hny-TB-aQf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="KwC-up-goQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="agB-RJ-78Z" secondAttribute="trailing" id="Tko-L0-0do"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="agB-RJ-78Z" secondAttribute="bottom" id="e3N-on-LpB"/>
+                <constraint firstItem="SkZ-dV-hSG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="kra-IN-WID"/>
+                <constraint firstItem="Hny-TB-aQf" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="lnN-To-tFh"/>
+                <constraint firstItem="agB-RJ-78Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qD6-kZ-Gej"/>
+                <constraint firstItem="SkZ-dV-hSG" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="wpk-Y4-aMC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

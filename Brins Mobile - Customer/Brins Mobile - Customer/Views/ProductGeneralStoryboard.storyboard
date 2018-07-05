@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ghg-4c-Roh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product General Discount Controller-->
+        <scene sceneID="d28-K1-b2w">
+            <objects>
+                <viewController storyboardIdentifier="DiscountController" id="Ghg-4c-Roh" customClass="ProductGeneralDiscountController" customModule="Brins_Mobile___Customer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVZ-6p-OiK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1C-KW-M4b" customClass="HeaderFormController" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="88"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="gFq-TG-7Wp"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLU-eB-DHD">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-bL-4lF" customClass="StackViewFormVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="20" width="315" height="111.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6zY-FJ-538" customClass="StackViewQuestionHorizontal" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="51.5"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bym-rY-OHw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXu-l0-xGW" customClass="LabelField" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="31" width="315" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9y-sc-eel" customClass="TextFieldGeneralSingle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="51.5" width="315" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-ap-gxO">
+                                                <rect key="frame" x="0.0" y="81.5" width="315" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZN-7a-0eS" customClass="ButtonFormSecondary" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="goToNextWithSender:" destination="Ghg-4c-Roh" eventType="touchUpInside" id="3zD-H1-ZVy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Krz-bL-4lF" firstAttribute="width" secondItem="RLU-eB-DHD" secondAttribute="width" constant="-60" id="2SG-dX-VUU"/>
+                                    <constraint firstItem="Krz-bL-4lF" firstAttribute="top" secondItem="RLU-eB-DHD" secondAttribute="top" constant="20" id="2hW-ar-km3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Krz-bL-4lF" secondAttribute="trailing" constant="30" id="DNW-qG-fOb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Krz-bL-4lF" secondAttribute="bottom" constant="20" id="E4O-Yu-WBU"/>
+                                    <constraint firstItem="Krz-bL-4lF" firstAttribute="leading" secondItem="RLU-eB-DHD" secondAttribute="leading" constant="30" id="f2V-8k-Qw4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z1C-KW-M4b" firstAttribute="leading" secondItem="CIa-UF-dJU" secondAttribute="leading" id="3g7-WY-4G8"/>
+                            <constraint firstItem="RLU-eB-DHD" firstAttribute="trailing" secondItem="CIa-UF-dJU" secondAttribute="trailing" id="8KL-r3-BLn"/>
+                            <constraint firstAttribute="bottom" secondItem="RLU-eB-DHD" secondAttribute="bottom" id="Ed6-1N-55F"/>
+                            <constraint firstItem="RLU-eB-DHD" firstAttribute="top" secondItem="z1C-KW-M4b" secondAttribute="bottom" constant="-18" id="NRz-nY-YUT"/>
+                            <constraint firstItem="RLU-eB-DHD" firstAttribute="leading" secondItem="CIa-UF-dJU" secondAttribute="leading" id="NWD-gd-Phb"/>
+                            <constraint firstItem="z1C-KW-M4b" firstAttribute="top" secondItem="CIa-UF-dJU" secondAttribute="top" id="Ys8-Ay-MMH"/>
+                            <constraint firstItem="z1C-KW-M4b" firstAttribute="trailing" secondItem="CIa-UF-dJU" secondAttribute="trailing" id="okH-We-9Hf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CIa-UF-dJU"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonNext" destination="IZN-7a-0eS" id="Prz-cL-6qE"/>
+                        <outlet property="controllerHeaderForm" destination="z1C-KW-M4b" id="jAL-sz-eOk"/>
+                        <outlet property="labelDiscount" destination="LXu-l0-xGW" id="h7g-6u-i5r"/>
+                        <outlet property="switchDiscount" destination="Bym-rY-OHw" id="5Y6-ci-kC7"/>
+                        <outlet property="textFieldDiscount" destination="t9y-sc-eel" id="iRA-gt-WpC"/>
+                        <outlet property="view" destination="gVZ-6p-OiK" id="oOK-Jl-0Mj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnw-B6-tE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4523" y="25"/>
+        </scene>
+        <!--Product General Calculate Premi Controller-->
+        <scene sceneID="f36-aY-kQJ">
+            <objects>
+                <viewController storyboardIdentifier="CalculatePremiController" id="XCk-vN-ZSs" customClass="ProductGeneralCalculatePremiController" customModule="Brins_Mobile___Customer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nGB-0U-sRi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znF-5r-AI8" customClass="HeaderFormController" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="88"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Yn7-QK-GcA"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Trp-I1-5tT">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wYg-sX-bXk" customClass="StackViewFormVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="20" width="315" height="233"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SY8-Yh-fVh" customClass="StackViewQuestionVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="50.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMD-sz-3Ns" customClass="LabelField" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bI6-BB-tuz" customClass="TextFieldGeneralSingle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="20.5" width="315" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iaV-5X-2z5" customClass="StackViewQuestionVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50.5" width="315" height="50.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyz-bL-DCF" customClass="LabelField" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXb-f6-QuS" customClass="TextFieldGeneralSingle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="20.5" width="315" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bLB-2U-N35" customClass="StackViewQuestionVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="101" width="315" height="50.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH0-kj-Oha" customClass="LabelField" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYr-WW-08Q" customClass="TextFieldGeneralSingle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="20.5" width="315" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8e-hB-CQb">
+                                                <rect key="frame" x="0.0" y="151.5" width="315" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="lpa-vp-Xjn"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LjN-Jd-1LH" customClass="StackViewQuestionVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="152.5" width="315" height="50.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aix-KI-eGk" customClass="LabelField" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyH-Zk-B6C" customClass="TextFieldGeneralSingle" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="20.5" width="315" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N0Q-oG-ZmS">
+                                                <rect key="frame" x="0.0" y="203" width="315" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENK-6E-Fsx" customClass="ButtonFormSecondary" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="goToNextWithSender:" destination="XCk-vN-ZSs" eventType="touchUpInside" id="8KR-I9-TxB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wYg-sX-bXk" firstAttribute="leading" secondItem="Trp-I1-5tT" secondAttribute="leading" constant="30" id="Bow-k9-v7K"/>
+                                    <constraint firstAttribute="trailing" secondItem="wYg-sX-bXk" secondAttribute="trailing" constant="30" id="Nky-j2-ZaK"/>
+                                    <constraint firstItem="wYg-sX-bXk" firstAttribute="top" secondItem="Trp-I1-5tT" secondAttribute="top" constant="20" id="UHm-Bi-1F4"/>
+                                    <constraint firstAttribute="bottom" secondItem="wYg-sX-bXk" secondAttribute="bottom" constant="20" id="p8q-Er-FIf"/>
+                                    <constraint firstItem="wYg-sX-bXk" firstAttribute="width" secondItem="Trp-I1-5tT" secondAttribute="width" constant="-60" id="v2x-bD-PlR"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="znF-5r-AI8" firstAttribute="leading" secondItem="8rp-1Q-WGx" secondAttribute="leading" id="Iaz-Jc-RGX"/>
+                            <constraint firstItem="znF-5r-AI8" firstAttribute="trailing" secondItem="8rp-1Q-WGx" secondAttribute="trailing" id="KuJ-fz-auH"/>
+                            <constraint firstItem="Trp-I1-5tT" firstAttribute="top" secondItem="znF-5r-AI8" secondAttribute="bottom" constant="-18" id="WXD-80-bfq"/>
+                            <constraint firstItem="Trp-I1-5tT" firstAttribute="trailing" secondItem="8rp-1Q-WGx" secondAttribute="trailing" id="btr-YV-Kcy"/>
+                            <constraint firstItem="znF-5r-AI8" firstAttribute="top" secondItem="8rp-1Q-WGx" secondAttribute="top" id="cwA-5k-3se"/>
+                            <constraint firstAttribute="bottom" secondItem="Trp-I1-5tT" secondAttribute="bottom" id="euf-s8-NlS"/>
+                            <constraint firstItem="Trp-I1-5tT" firstAttribute="leading" secondItem="8rp-1Q-WGx" secondAttribute="leading" id="iok-Kl-JSP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8rp-1Q-WGx"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonNext" destination="ENK-6E-Fsx" id="8fF-fE-0JQ"/>
+                        <outlet property="controllerHeaderForm" destination="znF-5r-AI8" id="39W-75-JSR"/>
+                        <outlet property="labelAdministrationFee" destination="mH0-kj-Oha" id="9mr-h7-EKm"/>
+                        <outlet property="labelDiscount" destination="Zyz-bL-DCF" id="zsO-mm-bMi"/>
+                        <outlet property="labelPremiBasic" destination="nMD-sz-3Ns" id="RLW-gQ-WYt"/>
+                        <outlet property="labelPremiTotal" destination="aix-KI-eGk" id="dFa-vw-zQ2"/>
+                        <outlet property="textFieldAdministrationFee" destination="FYr-WW-08Q" id="H0O-iv-7in"/>
+                        <outlet property="textFieldDiscount" destination="wXb-f6-QuS" id="96h-BA-ogv"/>
+                        <outlet property="textFieldPremiBasic" destination="bI6-BB-tuz" id="7aG-U6-3eI"/>
+                        <outlet property="textFieldPremiTotal" destination="dyH-Zk-B6C" id="Vo2-cb-n2g"/>
+                        <outlet property="view" destination="nGB-0U-sRi" id="jJl-rl-KbW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zme-yj-958" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5498" y="25"/>
+        </scene>
+        <!--Product General Terms And Conditions Controller-->
+        <scene sceneID="xGI-e5-QTz">
+            <objects>
+                <viewController storyboardIdentifier="TermsAndConditionsController" id="M5s-lv-jca" customClass="ProductGeneralTermsAndConditionsController" customModule="Brins_Mobile___Customer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SmF-bB-Uc4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBq-bX-4pu" customClass="HeaderFormController" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="88"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="BwE-lL-RLY"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSS-x2-ago">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2FD-iF-wmc" customClass="StackViewFormVertical" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="20" width="315" height="528"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hjq-Vc-KnN" customClass="StackViewQuestionHorizontal" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="467"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o7k-1v-82c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="467"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fq5-N9-exk">
+                                                <rect key="frame" x="0.0" y="467" width="317" height="31"/>
+                                            </switch>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2kc-iS-XCA">
+                                                <rect key="frame" x="0.0" y="498" width="315" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCB-lw-xpd" customClass="ButtonFormSecondary" customModule="Brins_Mobile___Customer" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="goToNextWithSender:" destination="M5s-lv-jca" eventType="touchUpInside" id="LRz-xK-jOp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2FD-iF-wmc" firstAttribute="width" secondItem="jSS-x2-ago" secondAttribute="width" constant="-60" id="BZc-cB-8R8"/>
+                                    <constraint firstItem="2FD-iF-wmc" firstAttribute="top" secondItem="jSS-x2-ago" secondAttribute="top" constant="20" id="dre-VU-oAx"/>
+                                    <constraint firstItem="2FD-iF-wmc" firstAttribute="leading" secondItem="jSS-x2-ago" secondAttribute="leading" constant="30" id="tqi-1N-jWH"/>
+                                    <constraint firstAttribute="trailing" secondItem="2FD-iF-wmc" secondAttribute="trailing" constant="30" id="vZS-Ce-FaA"/>
+                                    <constraint firstAttribute="bottom" secondItem="2FD-iF-wmc" secondAttribute="bottom" constant="20" id="xrS-bP-n1R"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jSS-x2-ago" secondAttribute="bottom" id="089-AJ-1jR"/>
+                            <constraint firstItem="nBq-bX-4pu" firstAttribute="top" secondItem="F1M-vV-bq5" secondAttribute="top" id="34T-GT-ZPH"/>
+                            <constraint firstItem="jSS-x2-ago" firstAttribute="trailing" secondItem="F1M-vV-bq5" secondAttribute="trailing" id="9jP-de-HyN"/>
+                            <constraint firstItem="o7k-1v-82c" firstAttribute="height" secondItem="SmF-bB-Uc4" secondAttribute="height" multiplier="0.7" id="Q2c-4w-nRd"/>
+                            <constraint firstItem="nBq-bX-4pu" firstAttribute="leading" secondItem="F1M-vV-bq5" secondAttribute="leading" id="YC5-2D-IDH"/>
+                            <constraint firstItem="jSS-x2-ago" firstAttribute="leading" secondItem="F1M-vV-bq5" secondAttribute="leading" id="aLl-qP-tGo"/>
+                            <constraint firstItem="nBq-bX-4pu" firstAttribute="trailing" secondItem="F1M-vV-bq5" secondAttribute="trailing" id="sWP-le-KNq"/>
+                            <constraint firstItem="jSS-x2-ago" firstAttribute="top" secondItem="nBq-bX-4pu" secondAttribute="bottom" constant="-18" id="w11-Of-dYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F1M-vV-bq5"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonNext" destination="XCB-lw-xpd" id="wh6-oU-c20"/>
+                        <outlet property="controllerHeaderForm" destination="nBq-bX-4pu" id="Way-2D-lVK"/>
+                        <outlet property="view" destination="SmF-bB-Uc4" id="5sE-vB-foN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMt-eb-cL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6449" y="25"/>
+        </scene>
+    </scenes>
+</document>
